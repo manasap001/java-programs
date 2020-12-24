@@ -1,30 +1,10 @@
-package com.xworkz.staticvariablemethodblock;
+package com.xworkz.inhetritance.hierarchy;
 
-public class Student {
-	String name;
-	int age;
-     int usn;
-	String branch;
-	static String university;
-	Student()
+public class Student extends Person{//child class1
+	String course="computer science";
+	public void display2()
 	{
-		System.out.println("no arg constructor");
-		
-	}
-	Student(String inName,int inAge,int inUSN,String inBranch)
-	{
-		name=inName;
-		age=inAge;
-		usn=inUSN;
-		branch=inBranch;
-		}
-	static void setuniversity(String University)
-	{
-		university="VTU";
-	}
-	void displayInformation()
-	{
-		System.out.println("name="+name+"age="+age+"branch="+branch+"university="+university);
+		System.out.println(" i opted a course:"+course);
 	}
 
 }

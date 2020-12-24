@@ -1,30 +1,9 @@
-package com.xworkz.staticvariablemethodblock;
+package com.xworkz.inheritance.singleinheritance;
 
-public class Student {
-	String name;
-	int age;
-     int usn;
-	String branch;
-	static String university;
-	Student()
-	{
-		System.out.println("no arg constructor");
-		
-	}
-	Student(String inName,int inAge,int inUSN,String inBranch)
-	{
-		name=inName;
-		age=inAge;
-		usn=inUSN;
-		branch=inBranch;
-		}
-	static void setuniversity(String University)
-	{
-		university="VTU";
-	}
-	void displayInformation()
-	{
-		System.out.println("name="+name+"age="+age+"branch="+branch+"university="+university);
-	}
-
+public class Student extends Person{
+String course="cs";
+public void display2()
+{
+	System.out.println("i am a student who belonging to cs course");
+}
 }
